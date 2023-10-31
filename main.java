@@ -17,7 +17,7 @@ public class Main {
 		}
 		
 		for (cocheHilo coche : coches) {
-			while (coche.isAlive()) {
+			while (coche.isAlive()) { //aqui empieza el try para capturar cualquier tipo de error.
 				try {
 					Thread.sleep(1000);
 				} catch (InterruptedException e) {
